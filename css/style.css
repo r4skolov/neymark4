@@ -347,6 +347,25 @@ select:-webkit-autofill:focus {
   border-radius: 600px;
 }
 
+
+.btn-top {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+.btn-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease;
+}
+
+
 @media (min-width: 768px) {
   .btn--secondary:hover::after {
     opacity: 1;
@@ -534,7 +553,7 @@ html.has-scroll-dragging {
   right: 0;
   top: 0;
   z-index: 99;
-  width: 3px;
+  width: 1px  !important;
   height: 100vh;
   -webkit-transform-origin: center right;
           transform-origin: center right;
@@ -562,9 +581,9 @@ html.has-scroll-dragging {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #fff;
+  background-color: #fff !important;
   opacity: 1;
-  width: 3px;
+  width: 1px !important;
   border-radius: 20px;
   margin: 4px;
   cursor: -webkit-grab;
@@ -2150,6 +2169,14 @@ html.has-scroll-dragging {
 }
 
 @media (min-width: 768px) {
+
+  .btn-top {
+    width: 40px;
+    height: 40px;
+    right: 34px;
+    bottom: 34px;
+  }
+
   .header {
     padding-left: 24px;
     padding-right: 24px;
@@ -2485,6 +2512,11 @@ html.has-scroll-dragging {
 }
 
 @media (min-width: 1024px) {
+  .btn-top {
+    right: 50px;
+    bottom: 50px;
+  }
+
   .btn {
     font-size: 24px;
     line-height: 30px;

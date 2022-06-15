@@ -187,8 +187,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
-    smartphone: {smooth: false},
+    smartphone: {smooth: true},
     tablet: {smooth: true},
+    resetNativeScroll: false
     
   });
 
@@ -211,56 +212,51 @@ document.addEventListener("DOMContentLoaded", () => {
         
     });
 
-
-  const swiperVert = document.querySelector('.js-metaverse-slider');
-
-  let mySwiper;
-  function mobileSwiper() {
-    if(swiperVert) {
-      if (window.innerWidth >= 1024 && swiperVert.dataset.mobile == 'false') {
-        mySwiper = new Swiper (swiperVert, {
-          direction: "vertical",
-          slidesPerView: 1,
-          spaceBetween: 0,
-          speed: 700,
-          centeredSlides: true,
-          mousewheel: true,
-          loop: false,
-          autoplay: true,
-        });
-        swiperVert.dataset.mobile = 'true';
-       
-      }
-
-      if (window.innerWidth < 1024) {
-        swiperVert.dataset.mobile = 'false';
-    
-        if (swiperVert.classList.contains('swiper-initialized')) {
-          mySwiper.destroy();
+    scroller.on('scroll', (obj) => {
+   
+      var btnTop = document.querySelector('#goTop');
+      // Reveal the butto
+        if (obj.delta.y >= 300) {
+          btnTop.classList.add('is-visible');
+        } else {
+          btnTop.classList.remove('is-visible');
         }
-      }
-    }
-  
-  };
 
+        const target = document.querySelector('#top');
+        
+          btnTop.onclick = function () {
+            scroller.scrollTo(target);
+          }
+        
+    });
+
+
+  // var basicScrollTop = function () {  
+  //   // The button
+  //   var btnTop = document.querySelector('#goTop');
+  //   // Reveal the button
+  //   var btnReveal = function () { 
  
-  mobileSwiper();
-  
-  window.addEventListener('resize', () => {
-    mobileSwiper();
-  });
-
-
-  // scrollStop.onmouseover = scrollStop.onmouseout = handler;
-
-  // function handler(event) {
-  
-  //   if (event.type == 'mouseover') {
-  //     scroller.stop();
+  //     if (window.scrollY >= 300) {
+  //       btnTop.classList.add('is-visible');
+  //     } else {
+  //       btnTop.classList.remove('is-visible');
+  //     }    
+  //   }  
+  //   // Smooth scroll top
+  //   // Thanks to => http://stackoverflow.com/a/22610562
+  //   var TopscrollTo = function () {
+  //     if(window.scrollY!=0) {
+  //       setTimeout(function() {
+  //         window.scrollTo(0,window.scrollY-30);
+  //         TopscrollTo();
+  //       }, 5);
+  //     }
   //   }
-  //   if (event.type == 'mouseout') {
-  //     scroller.start();
-  //   }
-  // }
- 
+  //   // Listeners
+  //   window.addEventListener('scroll', btnReveal);
+  //   btnTop.addEventListener('click', TopscrollTo);  
+      
+  // };
+  // basicScrollTop();
 });

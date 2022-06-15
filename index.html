@@ -14,10 +14,15 @@
 </head>
 
 <body class="page__body scroll" >
+    <button type="button" class="btn-reset btn-top" id="goTop">
+        <img src="img/btnscrollup.png" alt="">
+    </button>
     <div class="preload">
         <div class="loader"></div>
     </div>
+   
     <div class="site-container" data-scroll-container>
+       
         <header class="header" >
             <div class="container header__container">
                 <a href="#" class="logo">
@@ -55,7 +60,7 @@
             </div>
         </header>
         <main>
-             <section class="hero" >
+             <section class="hero"  id="top" data-scroll>
                 <div class="stars">
                     <span class="stars__item">
                         <img src="img/star.png" alt="">
