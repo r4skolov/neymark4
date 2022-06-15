@@ -1,0 +1,979 @@
+@media (min-width: (320px)) {
+    .btn {
+        padding: 10px 22px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .section-title {
+        font-size: 22px;
+        line-height: 120%;
+    }
+
+}
+
+@media (min-width: (414px)) {
+
+    .pass__icon {
+        flex: 0 0 auto;
+    }
+
+    .pass__head .btn--secondary {
+        width: auto;
+    }
+
+}
+
+@media (min-width: (480px)) {
+
+  .map__dot  {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+  
+@media (min-width: (768px)) {
+
+    .header {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .btn {
+        padding: 12px 36px 14px 36px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .section-title {
+        font-size: 34px;
+        line-height: 100%;
+    }
+
+
+    .nav__wrapper {
+        position: static;
+        height: auto; 
+    }
+    .nav__list {
+        flex-direction: row;
+        background-color: transparent;
+        width: auto;
+        max-width: 100%;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .nav__list-item {
+       
+    }
+
+    .nav__item:not(:last-child) {
+        margin-right: 40px;
+        margin-bottom: 0;
+    }
+
+    .hero__container {
+        padding-top: 127px;
+    }
+
+    .hero__title {
+        font-size: 60px;
+    }
+
+    .hero__text {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 34px;
+    }
+
+    .about {
+        padding-top: 120px;
+    }
+
+    .about__title {
+        margin-bottom: 34px;
+    }
+
+    .about__text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .about__right {
+        display: flex;
+        justify-content: flex-end; 
+
+        img {
+            width: 50%;
+        }
+    }
+
+    .video {
+        display: block;
+    
+        padding-top: 0px;
+    }
+
+    .video-block__item {
+        position: static;
+    }
+
+    .video__container {
+        width: 100%;
+        position: absolute;
+        top: 36px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .video__header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0;
+    }
+
+    .video__title {
+        font-size: 34px;
+        line-height: 100%;
+        margin-bottom: 0;
+    }
+
+    .metaverse {
+        padding: 120px 0;
+    }
+
+    .metaverse__container {
+        // flex-direction: row;
+    }
+
+    .metaverse__right {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .metaverse__left {
+        width: 100%;
+    }
+
+    .metaverse__left img {
+        width: 60%;
+        top: -155px;
+    }
+
+    .metaverse__right .swiper {
+        margin-left:0;
+        margin-right:0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .metaverse__swiper .swiper-wrapper{
+        max-width: 332px;
+    }
+
+    .metaverse__swiper .swiper-slide {
+        margin-bottom: 47px;
+    }
+
+    .metaverse__list {
+        max-width: 331px;
+    }
+
+    .metaverse__item {
+        margin-bottom: 47px;
+    }
+
+    .metaverse__name {
+        font-size: 34px;
+        margin-bottom: 14px;
+    }
+
+    .metaverse__text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .locations__wrapper {
+        background-color: #262643;
+        padding: 64px 27px;
+    }
+
+    .locations__head {
+        margin-bottom: 68px;
+    }
+
+    .locations__subtitle {
+        font-size: 20px;
+        line-height: 125%;
+    }
+
+    .locations__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .locations__item {
+        width: 70%;
+    }
+
+    .locations__name {
+        font-size: 20px;
+        line-height: 125%;
+    }
+
+    .locations__time {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .nft__container {
+        padding: 0;
+    }
+
+    .nft__wrapper {
+        justify-content: flex-end;
+    }
+
+    .nft__item {
+        padding: 50px 30px;
+        max-width: 557px;
+    }
+
+    .nft__title {
+        font-size: 34px;
+        margin-bottom: 22px;
+    }
+
+    .nft__text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .pass {
+        padding: 140px 0;
+    }
+
+    .pass__container {
+        flex-direction: row;
+    }
+
+    .pass__left {
+        width: 50%;
+        margin-bottom: 0px;
+    }
+
+    .pass__right {
+        width: 50%;
+    }
+
+    .pass__head .btn--secondary::before {
+        margin: -3px;
+    }
+
+    .pass__title {
+        font-size: 34px;
+        line-height: 110%;
+        margin-bottom: 40px;
+    }
+
+    .merch__container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .merch__container .btn--primary{
+        width: 172px;
+    }
+
+    .merch__title {
+        margin-bottom: 2px;
+    }
+
+    .merch__text {
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+    .merch__wrap {
+        margin-bottom: 0;
+    }
+
+    .merch__swiper .swiper-slide img {
+        height: 568px;
+    }
+
+    .merch__swiper .swiper-pagination-bullet {
+        width:12px;
+        height: 12px;
+    }
+
+    .merch__swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 20px;
+    }
+
+    .merch__swiper .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 25px;
+    }
+
+    .merch__swiper .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: 25px;
+    }
+
+    .partners__title {
+        margin-bottom: 50px;
+    }
+
+    .form__group {
+        margin-bottom: 36px;
+    }
+
+    .custom-checkbox__content::before {
+        border: 2px solid var(--white-color);
+        width: 30px;
+        height: 30px;
+    }
+
+    .custom-checkbox__content::after {
+        content: "";
+        width: 30px;
+        height: 30px;
+    }
+
+    .custom-checkbox__text {
+        font-size: 18px;
+        line-height: 21px;
+        padding-left: 21px;
+        top: 3px;
+    }
+
+    .footer {
+        padding-top: 62px;
+        padding-bottom: 101px;
+    }
+
+    .footer__container {
+        padding: 0 24px;
+    }
+
+    .footer__logo {
+        margin-bottom: 48px;
+    }
+
+    .footer__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer__left {
+        flex-direction: row;
+    }
+
+    .footer__left .footer__group:last-child {
+         margin-left: 32px;
+    }
+
+    .footer__group {
+        margin-bottom: 0px;
+        justify-content: space-around;
+    }
+
+    .socials {
+        justify-content: flex-end;
+        margin-bottom: 11px;
+    }
+
+    .map__dot  {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .map__dot img {
+        width: 18px;
+        height: 9px;
+    }
+    
+}
+
+@media (min-width: (1024px)) {
+    .btn {
+        font-size: 24px;
+        line-height: 30px;
+        padding: 16px 44px 18px 44px;
+    }
+
+    .nav__item:not(:last-child) {
+        margin-right: 80px;
+    }
+
+    .nav__link {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .section-title {
+        font-size: 50px;
+    }
+
+    .hero__container {
+        padding-top: 143px;
+    }
+
+    .hero__title {
+        font-size: 90px;
+        margin-bottom: 22px;
+    }
+
+    .hero__text {
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 52px;
+    }
+
+    .about {
+        padding-top: 191px;
+    }
+
+    .about__title {
+        margin-bottom: 44px;
+        max-width: 556px;
+    }
+
+    .about__container {
+        flex-direction: row;
+    }
+
+    .about__left {
+        width: 50%;
+    }
+
+    .about__right {
+        width: 50%;
+        padding-top: 136px;
+        img {
+            width: 100%;
+        }
+    }
+
+    .about__text {
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    .video__title {
+        font-size: 50px;
+    }
+
+    .metaverse {
+        padding: 140px 0;
+    }
+
+    .metaverse__container {
+        flex-direction: row;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .metaverse__left {
+        width: 50%;
+    }
+
+    .metaverse__right {
+        width: 50%;
+        justify-content: center; 
+    }
+
+    .metaverse__left img {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .metaverse__list {
+        max-width: 100%;
+    }
+
+    .metaverse__item {
+        margin-bottom: 94px;
+    }
+
+    .metaverse__name {
+        font-size: 50px;
+        margin-bottom: 20px;
+    
+        background: #454557;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    .metaverse__text {
+        font-size: 22px;
+        line-height: 34px;
+        color: #454557;
+    }
+
+    .metaverse__swiper {
+        height: 250px;
+    }
+
+    .metaverse__right .swiper{
+        overflow: visible;
+    }
+
+    .metaverse__swiper .swiper-wrapper{
+        max-width: 100%;
+    }
+
+    .metaverse__swiper .swiper-slide {
+        flex-shrink: 0;
+        margin-bottom: 0;
+    }
+
+    .metaverse__swiper .swiper-slide-active .metaverse__name{
+        background: linear-gradient(92.44deg, #33E3EE 4.29%, #C99EFF 50.91%, #FF94FB 99.52%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }   
+
+    .metaverse__swiper .swiper-slide-active .metaverse__text{
+        color: var(--white-color);
+    }   
+
+
+
+    .locations {
+        min-height: 100vh;
+    }
+
+    .locations__container {
+
+        display: flex;
+        justify-content: end;
+    }
+
+    .locations__wrapper {
+        padding: 61px 19px 30px 19px;
+        max-width: 455px;
+    }
+
+    .locations__head {
+        margin-bottom: 55px;
+    }
+
+    .locations__title {
+        font-size: 40px;
+        line-height: 100%;
+        margin-bottom: 14px;
+    }
+
+    .locations__subtitle {
+        font-size: 25px;
+        line-height: 125%;
+    }
+
+    .map {
+        position: absolute;
+    }
+
+    .map__dot  {
+        width: 40px;
+        height: 40px;
+    }
+
+    .map__dot img {
+        width: 24px;
+        height: 15px;
+    }
+
+    .locations__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .locations__item {
+        width: 100%;
+        margin-bottom: 16px;
+        opacity: 0.5;
+    }
+
+    .locations__item::before {
+        display: none;
+    }
+
+    .locations__item.active::before {
+        display: block;
+    }
+
+    .locations__item.active {
+        opacity: 1;
+    }
+
+    .locations__item.active::before {
+        display: block;
+    }
+
+    .nft__item {
+        padding: 68px 40px;
+        max-width: 664px;
+    }
+
+    .nft__title {
+        font-size: 50px;
+        margin-bottom: 42px;
+    }
+
+    .nft__text {
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+
+    .pass__title {
+        font-size: 50px;
+        line-height: 110%;
+        margin-bottom: 40px;
+    }
+
+    .pass__text {
+        font-size: 20px;
+        line-height: 34px;
+        margin-bottom: 38px;
+    }
+
+    .pass__item .pass__text {
+        margin-bottom: 0;
+        margin-left: 20px;
+        max-width: 480px;
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    .pass__head {
+        margin-bottom: 85px;
+    }
+
+    .pass__item {
+        margin-bottom: 45px;
+    }
+
+    .merch__container .btn--primary {
+        width: auto;
+    }
+
+    .merch__container {
+        margin-bottom: 34px;
+    }
+
+    .merch__title {
+       font-size: 40px;
+    }
+
+    .merch__text {
+        font-size: 22px;
+    }
+
+    .form__body {
+        margin-bottom: 50px;
+    }
+
+    .form__group {
+        margin-bottom: 52px;
+    }
+
+    .custom-checkbox__text {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .footer {
+        padding-top: 48px;
+        padding-bottom: 65px;
+    }
+
+    .footer__left .footer__group:last-child {
+        margin-left: 78px;
+    }
+    .map__dot {
+        background: #8B8BA5;
+        box-shadow: none;
+        border: none;
+    }
+
+    .map__dots.active .map__dot {
+        background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+        border: 1px solid #00F0FF;
+        box-shadow: 0px 0px 20px 2px #00F0FF;
+        background-color: var(--white-color);
+    }
+}
+
+@media (min-width: (1200px)) {
+
+    .locations__wrapper {
+        right: -34px;
+    }
+
+    .map__dot {
+        width: 60px;
+        height: 60px;
+    }
+
+    .map__dot img {
+        width: 40px;
+        height: 24px;
+    }
+
+    .video {
+        height: 100vh;
+    }
+
+    .video-block {
+        height: 100vh;
+    }
+}
+
+@media (min-width: (1440px)) {
+    .hero__container {
+        padding-top: 170px;
+    }
+
+    .about__title {
+        margin-bottom: 44px;
+        max-width: 556px;
+    }
+
+    .locations__wrapper {
+        padding: 68px 72px;
+        max-width: 734px;
+    }
+
+    .locations__head {
+        margin-bottom: 75px;
+    }
+
+    .locations__title {
+        font-size: 55px;
+        margin-bottom: 20px;
+    }
+
+    .locations__item {
+        margin-bottom: 24px;
+    }
+
+    .locations__name {
+        font-size: 24px;
+        line-height: 125%;
+    }
+
+    .locations__time {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .nft__item {
+        padding: 68px 90px;
+        max-width: 803px;
+    }
+
+    .nft__title {
+        font-size: 64px;
+    }
+
+    .locations__item::before {
+        left: -43px;
+    }
+}
+
+@media (min-width: (1920px)) {
+    .hero__title {
+        margin-bottom: 38px;
+    }
+
+    .section-title {
+        font-size: 64px;
+    }
+
+    .hero__text {
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 48px;
+    }
+
+    .about {
+        padding-top: 257px;
+    }
+
+    .about__title {
+        margin-bottom: 60px;
+    }
+
+    .about__right {
+        padding-top: 0;
+        img {
+            width: 100%;
+        }
+    }
+
+    .video__title {
+        font-size: 64px;
+    }
+
+    .metaverse {
+        padding: 180px 0;
+    }
+
+    
+
+    .metaverse__left {
+        width: 60%;
+    }
+
+    .metaverse__right {
+        
+    }
+
+    .metaverse__name {
+        font-size: 64px;
+        line-height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .metaverse__text {
+        font-size: 22px;
+        line-height: 140%;
+    }
+
+    .metaverse__item {
+        margin-bottom: 121px;
+    }
+
+    
+
+    
+    .pass {
+        padding: 180px 0;
+    }
+
+    .pass__title {
+        margin-bottom: 28px;
+    }
+
+    .pass__left {
+        width: 62%;
+    }
+
+    .pass__right {
+        padding-top: 77px;
+    }
+
+    .pass__text {
+        font-size: 22px;
+        line-height: 34px;
+        margin-bottom: 58px;
+    }
+
+    .pass__head {
+        margin-bottom: 116px;
+    }
+
+    .pass__item {
+        margin-bottom: 80px;
+    }
+
+    .pass__item .pass__text {
+        margin-bottom: 0;
+        margin-left: 60px;
+        max-width: 369px;
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    .pass__mobile {
+        display: none;
+    }
+
+    .pass__desktop  {
+        display: inline-block;
+    }
+
+    .small-pass {
+        display: block;
+    }
+
+    .pass__icon {
+        width: auto;
+    }
+
+    .merch__wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        padding-top: 50px;
+    }
+
+    .merch__container {
+        margin-bottom: 0;
+        align-items: flex-start;
+    }
+
+    .merch__title {
+        margin-bottom: 21px;
+    }
+
+    .merch__swiper .swiper-slide img {
+        height: 890px;
+    }
+
+    .merch__swiper .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 250px;
+    }
+
+    .merch__swiper .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: 250px;
+    }
+
+    .merch__swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 50px;
+    }
+
+    .custom-checkbox__text a::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        z-index: 1;
+        width: 100%;
+        height: 2px;
+        background-color: var(--white-color);
+    }
+
+    .partners {
+        padding-top: 221px;
+        padding-bottom: 248px;
+    }
+
+    .partners__title {
+        margin-bottom: 79px;
+    }
+
+    .footer {
+        padding-top: 97px;
+        padding-bottom: 68px;
+    }
+
+}

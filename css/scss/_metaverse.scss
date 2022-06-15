@@ -1,0 +1,95 @@
+.metaverse {
+    padding: 72px 0;
+
+    &__container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    &__left {
+        width: 100%;
+        
+        img {
+            position: relative;
+            left: -35px;
+        }
+    }
+
+    &__right {
+        width: 100%;
+    }
+
+    &__list {
+        margin-bottom: 32px;
+    }
+
+    &__item {
+        margin-bottom: 32px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.active {
+            .metaverse__name {
+              
+            }
+
+            .metaverse__text {
+                
+            }
+        }
+    }
+
+    &__name {
+        font-family: 'Tektur';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        font-feature-settings: 'ss01' on, 'zero' on;
+        
+        margin-bottom: 12px;
+        max-width: 557px;
+
+        background: linear-gradient(92.44deg, #33E3EE 4.29%, #C99EFF 50.91%, #FF94FB 99.52%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        max-width: 490px;
+        color: var(--white-color);
+    }
+
+    &__swiper {
+        .swiper-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            transition-property: transform;
+            box-sizing: content-box;
+        }
+
+        .swiper-slide {
+            margin-bottom: 32px;
+            flex-shrink: 1;
+            cursor: pointer;
+        }
+    }
+    
+}
+
+
+.test1 {
+    width: 50%;
+    height: 100%;
+}

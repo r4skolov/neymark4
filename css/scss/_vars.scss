@@ -1,0 +1,21 @@
+:root {
+    // base
+    --font-family: "Manrope", sans-serif;
+    --content-width: 1420px;
+    --container-offset: 10px;
+    --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  
+    // colors
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --primary-color: #17172D;
+    --purple-color: #6B30AB;
+    --purplelight-color: #ECDFF2;
+    --primaryy-color: 201, 158, 255;
+  
+    --base-transtion: all 0.3s ease;
+
+    --burger-width: 22px;
+    --burger-height: 17px;
+    --burger-line-height: 2px;
+}

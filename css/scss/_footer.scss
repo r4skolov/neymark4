@@ -1,0 +1,55 @@
+.footer {
+    padding-top: 64px;
+    padding-bottom: 42px;
+    font-family: 'Play';
+
+    &__logo {
+        display: inline-block;
+        margin-bottom: 32px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+
+    &__link {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: var(--white-color);
+        opacity: 0.3;
+        text-align: left;
+    }
+}
+
+.socials {
+    display: flex;
+    // justify-content: flex-end;
+    margin-bottom: 32px;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 11px;
+        }
+
+        a {
+            opacity: 0.3;
+        }
+    }
+}

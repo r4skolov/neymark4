@@ -1,0 +1,209 @@
+.partners {
+    padding: 192px 0;
+    background-image: url("../img/contact-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 52%;
+
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__title {
+        max-width: 654px;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+.form {
+    max-width: 573px;
+
+    &--invalid {
+        .form__input {
+            border-bottom: 1px solid red;
+        }
+
+
+        .form__wrap {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 6px;
+                z-index: 1;
+                width: 23px;
+                height: 23px;
+                background-image: url("../img/warning.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &--area {
+                &::before {
+                    top: 5px;
+                }
+            }
+        }
+
+        .custom-checkbox .custom-checkbox__content::before{
+            border-color: #FF2626;
+        }
+
+        .custom-checkbox .custom-checkbox__content::after{
+            border-color: #FF2626;
+        }
+
+        .custom-checkbox .custom-checkbox__text {
+            color: #FF2626;
+        }
+
+        .custom-checkbox__text a::before {
+            display: none;
+        }
+
+        .form__area {
+           border-color: #FF2626;
+        }
+
+        
+        
+    }
+
+    &__body {
+        margin-bottom: 38px;
+    }
+
+
+    &__group {
+        width: 100%;
+        margin-bottom: 32px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &--warning {
+            display: none;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid var(--white-color);
+
+        &:focus-visible {
+            border: transparent;
+            border-bottom: 2px solid var(--white-color);
+        }
+    
+        &:focus {
+            border: transparent;
+            border-bottom: 2px solid var(--white-color);
+        }
+    }
+
+    &__area {
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid var(--white-color);
+        resize: none;
+    }
+}
+
+.custom-checkbox {
+    position: relative;
+  
+    &__field {
+      appearance: none;
+      position: absolute;
+    }
+
+    &__text {
+        font-family: 'Play';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        padding-left: 10px;
+        color: var(--white-color);
+        position: relative;
+        top: -3px;
+
+        a {
+            position: relative;
+        }
+    }
+  
+    &__content {
+        padding-left: 25px;
+        cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: 1px solid var(--white-color);
+        width: 20px;
+        height: 20px;
+        box-sizing: border-box;
+        border-radius: 2px;
+      }
+  
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        box-sizing: border-box;
+        // background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='fi_32282' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='405.272px' height='405.272px' viewBox='0 0 405.272 405.272' style='enable-background:new 0 0 405.272 405.272;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M393.401,124.425L179.603,338.208c-15.832,15.835-41.514,15.835-57.361,0L11.878,227.836 c-15.838-15.835-15.838-41.52,0-57.358c15.841-15.841,41.521-15.841,57.355-0.006l81.698,81.699L336.037,67.064 c15.841-15.841,41.523-15.829,57.358,0C409.23,82.902,409.23,108.578,393.401,124.425z'%3E%3C/path%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E");
+        background-position: center;
+        background-size: 10px 10px;
+        background-repeat: no-repeat;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 2px;
+      }
+    }
+}
+  
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+    opacity: 1;
+    background-color: var(--white-color);
+}
+  
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+   
+}
+  
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+
+.form__group.form--invalid.form__group--warning {
+   
+    display: flex;
+    align-items: center;
+
+    span {
+        font-family: 'Play';
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        color: #FF2626;
+        padding-left: 12px;
+    }
+    
+}
+

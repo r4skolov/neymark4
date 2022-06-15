@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Неймарк</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/locomotive-scroll.min.css">
+</head>
+
+<body class="page__body scroll" >
+    <div class="preload">
+        <div class="loader"></div>
+    </div>
+    <div class="site-container" data-scroll-container>
+        <header class="header" >
+            <div class="container header__container">
+                <a href="#" class="logo">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
+                <nav class="nav">
+                    <div class="nav__wrapper">
+                        <ul class="nav__list list-reset">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#video"  data-scroll data-scroll-to>
+                                    О проекте
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#locations" data-scroll-to>
+                                    Локации
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#pass" data-scroll-to>
+                                    NFT
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#merch" data-scroll-to>
+                                    Мерч
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <button class="burger">
+                    <span class="burger__line"></span>
+                </button>
+            </div>
+        </header>
+        <main>
+             <section class="hero" >
+                <div class="stars">
+                    <span class="stars__item">
+                        <img src="img/star.png" alt="">
+                    </span>
+                    <span class="stars__item-2">
+                        <img src="img/star.png" alt="">
+                    </span>
+                    <span class="stars__item-3">
+                        <img src="img/star.png" alt="">
+                    </span>
+                    <span class="stars__item-4">
+                        <img src="img/star.png" alt="">
+                    </span>
+                    <span class="stars__item-5">
+                        <img src="img/star.png" alt="">
+                    </span>
+                    <span class="stars__item-6">
+                        <img src="img/star.png" alt="">
+                    </span>
+                    <span class="stars__item-7">
+                        <img src="img/star.png" alt="">
+                    </span>
+                </div>
+                <div class="container hero__container">
+                    <h1 class="hero__title">
+                        Неймарк.MetaVerse
+                    </h1>
+                    <p class="hero__text">
+                        Первая в России метавселенная с адаптированными для виртуальной реальности программами обучения
+                    </p>
+                    <a href="#" class="btn btn-reset btn--white">Узнать больше</a>
+                </div>
+            </section>
+            <section class="about" >
+                <span class="gradient1"></span>
+                <div class="container about__container">
+                    <div class="about__left show" data-scroll>
+                        <h2 class="section-title about__title">
+                            Что такое метавселенная?
+                        </h2>
+                        <p class="about__text">
+                            Постоянно действующее виртуальное пространство, в котором люди могут взаимодействовать друг
+                            с другом и с цифровыми объектами через свои аватары. Взаимодействие происходит как с помощью
+                            обычных персональных компьютеров, так и с гарнитурами виртуальной или дополненной
+                            реальности.
+                        </p>
+                    </div>
+                    <div class="about__right">
+                        <img src="img/img_wom.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="video" id="video" >
+                <div class="video-block">
+                    <video preload="metadata"  class="video-block__item" muted playsinline loop data-scroll >
+                        <source type="video/mp4" src="img/1s.mp4">
+                    </video>
+                </div>
+                <div class="container video__container">
+                    <div class="video__header">
+                        <h2 class="video__title">
+                            О проекте <span>НЕЙМАРК</span>
+                        </h2>
+                        <a href="#" class="btn btn-reset btn--primary">
+                            <span>Подробнее</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="metaverse"  data-scroll  data-scroll-call="args"  data-scroll-offset="100%,0%">
+                    <div class="container metaverse__container">
+                        <h2 class="section-title visually-hidden">Метавселенная</h2>
+                        <div class="metaverse__left " data-scroll>
+                            <img src="img/img_dib4.png" alt="">
+                        </div>
+                        <div class="metaverse__right" >
+                            <!-- <div class="swiper js-metaverse-slider metaverse__swiper"  data-mobile="false" >
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <h3 class="metaverse__name">
+                                            в 2023 году
+                                        </h3>
+                                        <p class="metaverse__text">
+                                            Открытие первых программ обучения
+                                        </p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <h3 class="metaverse__name active">
+                                            Более 4000
+                                        </h3>
+                                        <p class="metaverse__text">
+                                            Образовательных учреждений России уже имеют VR-оборудование
+                                        </p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <h3 class="metaverse__name">
+                                            Только на ЦИПР и ЦИПР TechWeek
+                                        </h3>
+                                        <p class="metaverse__text">
+                                            Образовательных учреждений России уже имеют VR-оборудование
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <ul class="metaverse__list list-reset" >
+                                <li class="metaverse__item active" id="high1">
+                                    <div id="sec1">
+                                        <h3 class="metaverse__name">
+                                            в 2023 году
+                                        </h3>
+                                        <p class="metaverse__text">
+                                            Открытие первых программ обучения
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="metaverse__item" id="high2">
+                                    <div id="sec2">
+                                        <h3 class="metaverse__name active">
+                                            Более 4000
+                                        </h3>
+                                        <p class="metaverse__text">
+                                            Образовательных учреждений России уже имеют VR-оборудование
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="metaverse__item" id="high3">
+                                    <div id="sec3">
+                                        <h3 class="metaverse__name">
+                                            Только на ЦИПР и ЦИПР TechWeek
+                                        </h3>
+                                        <p class="metaverse__text">
+                                            Образовательных учреждений России уже имеют VR-оборудование
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </section>
+            <section class="locations" id="locations" >
+                <div class="map">
+                    <div class="map__wrap">
+                        <img src="img/locations_map.png" class="map__img" alt="">
+                        <div class="map__dots active" data-dot="#dot_6">
+                            <span class="map__dot">
+                                <img src="img/Subtract.svg" alt="">
+                            </span>
+                        </div>
+                        <div class="map__dots" data-dot="#dot_2">
+                            <span class="map__dot">
+                                <img src="img/Subtract.svg" alt="">
+                            </span>
+                        </div>
+                        <div class="map__dots" data-dot="#dot_3">
+                            <span class="map__dot">
+                                <img src="img/Subtract.svg" alt="">
+                            </span>
+                        </div>
+                        <div class="map__dots" data-dot="#dot_4">
+                            <span class="map__dot">
+                                <img src="img/Subtract.svg" alt="">
+                            </span>
+                        </div>
+                        <div class="map__dots" data-dot="#dot_5">
+                            <span class="map__dot">
+                                <img src="img/Subtract.svg" alt="">
+                            </span>
+                        </div>
+                        <div class="map__dots" data-dot="#dot_1">
+                            <span class="map__dot">
+                                <img src="img/Subtract.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container locations__container">
+                    <div class="locations__wrapper">
+                        <div class="locations__head">
+                            <h2 class="section-title locations__title">
+                                Запуск пилота в рамках ЦИПРа
+                            </h2>
+                            <p class="locations__subtitle">
+                                подключение к кампусу с площадок:
+                            </p>
+                        </div>
+                        <ul class="locations__list list-reset">
+                            <li class="locations__item" id="dot_1">
+                                <h4 class="locations__name">ИЦАЕ, Семашко 7Б</h4>
+                                <span class="locations__time">
+                                    30 мая, 17:00-21:00 <br>
+                                    31 мая, 17:00-20:00
+                                </span>
+                            </li>
+                            <li class="locations__item" id="dot_4">
+                                <h4 class="locations__name">Точка Кипения, Площадь Минина и Пожарского 7</h4>
+                                <span class="locations__time">
+                                    30 мая, 17:00-21:00 <br>
+                                    31 мая, 17:00-20:00
+                                </span>
+                            </li>
+                            <li class="locations__item" id="dot_3">
+                                <h4 class="locations__name">МТС StartUp Hub, Алексеевская 6/16</h4>
+                                <span class="locations__time">
+                                    30 мая, 17:00-21:00 <br>
+                                    31 мая, 17:00-20:00
+                                </span>
+                            </li>
+                            <li class="locations__item" id="dot_2">
+                                <h4 class="locations__name">ул. Почаинская, 17, ЛИТ. КК1</h4>
+                                <span class="locations__time">
+                                    30 мая, 17:00-21:00 <br>
+                                    31 мая, 17:00-20:00
+                                </span>
+                            </li>
+                            <li class="locations__item active" id="dot_6">
+                                <h4 class="locations__name">ЦИПР, Нижегородская Ярмарка, Совнаркомовская 13</h4>
+                                <span class="locations__time">
+                                    30 мая, 17:00-21:00
+                                </span>
+                            </li>
+                            <li class="locations__item" id="dot_5">
+                                <h4 class="locations__name">Сбер Garage, Октябрьская 35</h4>
+                                <span class="locations__time">
+                                    30 мая, 17:00-21:00
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="nft" >
+                <video preload="metadata" autoplay muted playsinline loop class="nft__video">
+                    <source type="video/mp4" src="img/nft-bg-video.mp4">
+                </video>
+                <div class="container nft__container">
+                    <div class="nft__wrapper show" data-scroll>
+                        <div class="nft__item">
+                            <h2 class="section-title nft__title">
+                                Неймарк.<span>NFT</span>
+                            </h2>
+                            <p class="nft__text">
+                                В течение ЦИПР TECH WEEK, придя на один из стендов НЕЙМАРК.Metaverse, пользователи
+                                смогут создавать 3D-картину. Совместный арт будет преобразован в NFT, и продан с
+                                аукциона в качестве предмета современного цифрового искусства.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pass" id="pass" >
+                <div class="container pass__container">
+                    <div class="pass__left">
+                        <div class="pass__head">
+                            <h2 class="section-title pass__title">
+                                NFT-метапасс
+                            </h2>
+                            <p class="pass__text">
+                                Метапасс — это ваш пропуск в метавселенную в формате NFT, который позволяет владельцу
+                                получать доступ и подтверждать личность.
+                            </p>
+                            <a href="#" class="btn btn-reset btn--secondary">
+                                <span>
+                                    Получить NFT-метапасс
+                                </span>
+                            </a>
+                        </div>
+                        <div class="pass__item">
+                            <div class="pass__icon">
+                                <img src="img/pass-icon1.png" alt="">
+                            </div>
+                            <p class="pass__text">
+                                К открытию НЕЙМАРК.MetaVerse будет создана коллекция NFT-метапасс.
+                            </p>
+                        </div>
+                        <div class="pass__item">
+                            <div class="pass__icon">
+                                <img src="img/pass-icon2.png" alt="">
+                            </div>
+                            <p class="pass__text">
+                                Коллекция токенов будет размещена на бирже токенов и доступна к покупке.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pass__right">
+                        <img class="pass__mobile" src="img/nft-pass.png" alt="">
+                        <img class="pass__desktop" src="img/large-pass.png" alt="">
+                        <span class="small-pass" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-offset="0%, 70%">
+                            <img src="img/small-pass.png" alt="">
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section class="merch" id="merch" >
+                <div class="merch__wrapper">
+                    <div class="container merch__container">
+                        <div class="merch__wrap">
+                            <h2 class="section-title merch__title">
+                                Мерч от Неймарк.MetaVerse
+                            </h2>
+                            <p class="merch__text">
+                                Лимитированная коллекция в коллаборации с брендом Нейм
+                            </p>
+                        </div>
+                        <a href="#" class="btn btn-reset btn--primary">
+                            <span>Хочу мерч!</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper merch__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/merch.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/merch.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/merch.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <section class="partners" >
+                <div class="container partners__container">
+                    <div class="partners__wrapper show" data-scroll>
+                        <h2 class="section-title partners__title">Хотите стать партнёром?</h2>
+                        <form class="form " id="partners-form" method="POST" action="#" name="partners-form">
+                            <div class="form__body">
+                                <div class="form__group">
+                                    <div class="form__wrap">
+                                        <input class="form__input js-valid" type="text" name="partners-name"
+                                            id="partners-name" placeholder="Имя">
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <div class="form__wrap">
+                                        <input class="form__input js-valid" type="tel" name="partners-phone"
+                                            id="partners-phone" placeholder="Телефон" data-mask="tel">
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <div class="form__wrap form__wrap--area">
+                                        <textarea class="form__area js-valid" name="partners-massage" id="partners-massage"
+                                            cols="30" rows="5" placeholder="Ваши предложения"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" class="custom-checkbox__field js-valid"
+                                            id="partners-checkbox">
+                                        <span class="custom-checkbox__content"></span>
+                                        <span class="custom-checkbox__text">Согласие на <a href="#">обработку
+                                                персональных данных</a>
+                                        </span>
+                                    </label>
+                                </div>
+                                <!-- <div class="form__group  form__group--warning">
+                                    <img src="img/warning.svg" alt="">
+                                    <span>Необходимо заполнить поля</span>
+                                </div> -->
+                            </div>
+                            <button type="submit" class="btn btn-reset btn--transparent"
+                                value="validate">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </section>        
+        </main>
+        <footer class="footer">
+            <div class="container footer__container">
+                <a href="#" class="footer__logo">
+                    <img src="img/logo.svg" class="logo" alt="">
+                </a>
+                <div class="footer__wrapper">
+                    <div class="footer__left">
+                        <div class="footer__group">
+                            <a href="tel:+79999999999" class="footer__link">+7 (999) 999-99-99</a>
+                            <a href="mailto:your@mail.com" class="footer__link">your@mail.com</a>
+                        </div>
+                        <div class="footer__group">
+                            <a href="#" class="footer__link">При поддержке Название организации</a>
+                            <a href="#" class="footer__link">Политика Конфиденциальности</a>
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <ul class="socials list-reset">
+                            <li class="socials__item">
+                                <a href="#" target="_blank">
+                                    <img src="img/vk.svg" alt="Vk">
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" target="_blank">
+                                    <img src="img/tg.svg" alt="Telegram">
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="footer__link" target="_blank">Разработано в R-Top</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/locomotive-scroll.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/debug.addIndicators.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+
