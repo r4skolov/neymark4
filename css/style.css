@@ -479,6 +479,18 @@ select:-webkit-autofill:focus {
           transition-timing-function: ease-out;
 }
 
+.show-right {
+  -webkit-transform: translateX(4rem);
+          transform: translateX(4rem);
+  opacity: 0;
+  will-change: transform;
+  -webkit-transition: .8s;
+  transition: .8s;
+  pointer-events: none;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
 .show.is-inview {
   opacity: 1;
   pointer-events: auto;
@@ -489,6 +501,15 @@ select:-webkit-autofill:focus {
 }
 
 .show-left.is-inview {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.show-right.is-inview {
   opacity: 1;
   pointer-events: auto;
   -webkit-transform: none;
@@ -1548,11 +1569,11 @@ html.has-scroll-dragging {
 .nft::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
   z-index: 2;
   width: 100%;
-  height: 100%;
+  height: 101%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 5, 31, 0)), color-stop(0%, rgba(8, 5, 31, 0.692708)), to(#08051F));
   background: linear-gradient(180deg, rgba(8, 5, 31, 0) 0%, rgba(8, 5, 31, 0.692708) 0%, #08051F 100%);
   opacity: 0.6;
@@ -2550,6 +2571,8 @@ html.has-scroll-dragging {
   }
   .metaverse__list {
     max-width: 100%;
+    margin-bottom: 0;
+    padding-top: 50px;
   }
   .metaverse__item {
     margin-bottom: 94px;
@@ -2557,16 +2580,10 @@ html.has-scroll-dragging {
   .metaverse__name {
     font-size: 50px;
     margin-bottom: 20px;
-    background: #454557;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
   }
   .metaverse__text {
     font-size: 22px;
     line-height: 34px;
-    color: #454557;
   }
   .metaverse__swiper {
     height: 250px;
@@ -2582,16 +2599,7 @@ html.has-scroll-dragging {
         flex-shrink: 0;
     margin-bottom: 0;
   }
-  .metaverse__item.active .metaverse__name{
-    background: linear-gradient(92.44deg, #33E3EE 4.29%, #C99EFF 50.91%, #FF94FB 99.52%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-  }
-  .metaverse__item.active .metaverse__text {
-    color: var(--white-color);
-  }
+  
   .locations {
     min-height: 100vh;
   }

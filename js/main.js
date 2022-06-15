@@ -91,23 +91,23 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 
- //скролл в секции metaverse 
-	var controller = new ScrollMagic.Controller({globalSceneOptions: {
-    duration: 250,
-  }});
+//  //скролл в секции metaverse 
+// 	var controller = new ScrollMagic.Controller({globalSceneOptions: {
+//     duration: 250,
+//   }});
 
-	new ScrollMagic.Scene({triggerElement: "#sec1"})
-					.setClassToggle("#high1", "active")
-					.addTo(controller);
-	new ScrollMagic.Scene({triggerElement: "#sec2"})
-					.setClassToggle("#high2", "active") 
-					.addTo(controller);
-	new ScrollMagic.Scene({triggerElement: "#sec3"})
-					.setClassToggle("#high3", "active") 
-					.addTo(controller);
-	new ScrollMagic.Scene({triggerElement: "#sec4"})
-					.setClassToggle("#high4", "active")
-					.addTo(controller);
+// 	new ScrollMagic.Scene({triggerElement: "#sec1"})
+// 					.setClassToggle("#high1", "active")
+// 					.addTo(controller);
+// 	new ScrollMagic.Scene({triggerElement: "#sec2"})
+// 					.setClassToggle("#high2", "active") 
+// 					.addTo(controller);
+// 	new ScrollMagic.Scene({triggerElement: "#sec3"})
+// 					.setClassToggle("#high3", "active") 
+// 					.addTo(controller);
+// 	new ScrollMagic.Scene({triggerElement: "#sec4"})
+// 					.setClassToggle("#high4", "active")
+// 					.addTo(controller);
 
 
   const form = document.querySelector('.form');
